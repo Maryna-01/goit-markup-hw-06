@@ -715,8 +715,44 @@ background-color: #31d0aa;
   pointer-events: none;
 }
 
+.form{
+  color: #2E2F42;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 72px 16px;
+}
 
+.btn-modal{
+padding: 16px 32px;
+gap: 10px;
+width: 169px;
+height: 56px;
+left: 635px;
+top: 584px;
+border-radius: 4px;
+background: #4D5AE5;
+}
+.link-check{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+  color: var(--color-iris) ;
+}
+.modal-check-span{
+  box-sizing: border-box;
+  width: 16px;
+height: 16px;
+}
 
+.modal-checkbox{
+  margin-bottom: 24px;
+}
 
 
 
