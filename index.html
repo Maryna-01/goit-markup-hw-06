@@ -375,17 +375,17 @@
     </footer>
 <div class="backdrob is-hidden" data-modal>
     <div class="modal-content">
-        <p class="form">Leave your contacts and we will call you back</p>
         <button class="open-modal" type="button" data-modal-close>
      <svg class="close-btn" width="8" height="8">
         <use href="./images/icons.svg#icon-vector"></use>
     </svg>
         </button>
-        <form name="signup_form" autocomplete="on" novalidate>
+        <p class="form">Leave your contacts and we will call you back</p>
+        <form name="signup_form" autocomplete="on"novalidate>
                 <div class="inputdiv-label"> 
                 <label for="user-name" class="input-label">Name</label>
                 <div class="modal-div">
-                  <input type="text" name="name" id="user-name" class="modal-input" autofocus />
+                  <input type="text" name="user-name" id="user-name" class="modal-input" autofocus/>
                   <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                 </svg>
@@ -393,19 +393,18 @@
             </div>
             </form>
                <div class="input-label">
-                <label for="user-phone"class="input-label">Phone</label>
+                <label for="user-phone" class="input-label">Phone</label>
                   <div class="modal-div">
                   <input type="text" name="phone" id="user-phone" class="modal-input"/>
                   <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                 </svg>
-                 
             </div>
             </div>
                <div class="input-label">
                 <label for="user-email" class="input-label">Email</label>
                 <div class="modal-div">
-                <input type="text" name="email" id="user-email" class="modal-input"/>
+                <input type="text" name="user-email" id="user-email" class="modal-input"/>
                 <svg class="modal-icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                 </svg>
@@ -419,7 +418,7 @@
                 </div>
                 <!-- 5 element -->
                 <div class="modal-checkbox">
-                <input  type="checkbox" id="user-privacy" name="user-privacy" value="true" class="modal-acept-privacy-check  visually-hidden">
+                <input id="user-privacy" type="checkbox" name="user-privacy" value="true" class="modal-acept-privacy-check visually-hidden">
                 <label for="user-privacy" class="modal-accept-privacy-check">
                 <span class="modal-check-span">
                 <svg class="modal-svg-check" width="10" height="8">
@@ -430,23 +429,22 @@
                 <a class="link-check link" href="">Privacy Policy</a>
             </label>
              <button type="submit" class="btn-modal">Send</button>
-              </form>
             </div>
            
         </div>
-        <div class="form-container">
-            <p class="form-subscribe">Subscribe</p>
-            <form action="" class="form-email">
-                <label class="label-class" for="user-subscribe">
-                  <input name="email" type="text" class="input-email" placeholder="E-mail">
-                </label>
-                <button class="btn-subscribe" type="submit">Subscribe
-                    <svg class="btn-svg">
-                    <use href="./images/icons.svg#icon-Frame-3" width="24" height="24"></use>
-                    </svg>
-                </button>
-            </form>
-        </div>
+    </div>
+    <div class="form-container">
+        <p class="form-subscribe">Subscribe</p>
+        <form class="form-email">
+            <label for="user-subscribe" id="user-subscribe" class="label-class">
+              <input name="email" type="text" class="input-email" placeholder="E-mail">
+            </label>
+            <button class="btn-subscribe" type="submit">Subscribe<svg class="btn-svg">
+                <use href="./images/icons.svg#icon-Frame-3" width="24" height="24"></use>
+                </svg>
+            </button>
+        </form>
+
     </div>
 
 
