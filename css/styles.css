@@ -782,11 +782,11 @@ height: 16px;
 }
 
 .form-email{
-  display: flex;
+display: flex;
   gap: 24px;
 
 } 
-.input-email ::placeholder{
+.input-email{
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff; 
@@ -798,6 +798,10 @@ height: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff; 
+}
+::placeholder{
+  color: #ffffff;
+
 }
 .btn-subscribe{
   font-family: "Roboto", sans-serif ;
@@ -906,8 +910,9 @@ border-color: #4D5AE5;
   background-color: var(-color-ocean);
   fill:var(--color-cloud);
 }
-{
-}
+.form-container{
+
+} 
 {
 }
 {
