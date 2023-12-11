@@ -23,8 +23,7 @@
 }
 
 .container {
-  width: 1158px;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -43,10 +42,11 @@
 @media screen and (min-width:1158px) {
   .container {
     width: 1158px;
+    padding: 0 15px;
   }
 }
 /* =======Mobile====== */
-@media screen and (max-widht:767){
+@media screen and (max-widht:767px){
   /* Effective Solutions for Your Business */
     .section-hero {
       padding: 188px 0;
@@ -1036,7 +1036,7 @@
     }
 }
 /* =======TABLET====== */
-@media screen and ( min-widht:768) {
+@media screen and ( min-widht:768px) {
   /* Effective Solutions for Your Business */
     .section-hero {
       padding: 188px 0;
@@ -2028,6 +2028,11 @@
       border-radius: 4px;
       color: #ffffff;
     }
+}
+@media screen and (max-wihth:1157px) {
+.container-icon{
+  display: none;
+}
 }
 /* =============DESKtop */
 @media screen and (min-widht:1158px) {
