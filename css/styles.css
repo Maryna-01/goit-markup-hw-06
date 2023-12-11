@@ -1055,15 +1055,15 @@
       height: 64;
     }
   
-    .container-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 112px;
-      background-color: var(--color-cloud);
-      border-radius: 4px;
-      margin-bottom: 8px;
-    }
+     .container-icon {
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       height: 112px;
+       background-color: var(--color-cloud);
+       border-radius: 4px;
+       margin-bottom: 8px;
+     }
   
     .nav-list {
       font-weight: 800;
