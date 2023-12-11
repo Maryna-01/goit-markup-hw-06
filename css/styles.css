@@ -1231,6 +1231,7 @@
   
     /* Strategy  */
     .about-list-link {
+      display: flex;
       font-weight: 700;
       font-size: 36px;
       line-height: 1.11;
@@ -1509,7 +1510,8 @@
   
     .about-link {
       display: flex;
-      gap: 24px;
+      flex-wrap: wrap;
+      gap: 72px;
     }
   
     .header-list-link {
