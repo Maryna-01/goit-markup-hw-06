@@ -243,6 +243,7 @@
       border-radius: 4px;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 72px;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   
@@ -354,7 +355,10 @@
     }
   
     .footer-container {
-      margin-right: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 72px;
     }
   /* не потрібне (можливо)
     .footer-content-container {
@@ -370,6 +374,12 @@
       letter-spacing: 0.02em;
       color: var(--color-white);
       margin-bottom: 16px;
+      text-align: center;
+
+    }
+
+    .media-container{
+      margin-bottom: 72px;
     }
   
     .list-media {
@@ -512,6 +522,11 @@
       display: flex;
       align-items: center;
       margin: 0, auto;
+      justify-content: space-between;
+      /*
+      padding-top: 16px;
+      padding-bottom: 16px;
+      */
   
     }
   
@@ -758,10 +773,10 @@
     }
   
     .header {
-      padding-top: 16px;
-      padding-bottom: 16px;
       border-bottom: 1px solid var(--color-cornflower);
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+      border-bottom: 1px solid #e7e9fc;
+      background: #fff; 
     }
   
     .teams-list-img-wrapper {
@@ -1049,6 +1064,7 @@
       line-height: 1.5;
       letter-spacing: 0.02em;
       color: #ffffff;
+      text-align: center;
     }
   
     .form-email {
@@ -1073,10 +1089,6 @@
     .btn-svg {
       margin-left: 16px;
       fill: var(--color-cloud);
-    }
-  
-    .form-container {
-    width: 584px;
     }
   
     .form-email {
@@ -1123,7 +1135,6 @@
     padding-right: 24px;
     padding-top: 72px;
     padding-bottom: 48px;
-
   }
 }
 /* =======TABLET====== */
@@ -1256,6 +1267,7 @@
       line-height: 1.5;
       letter-spacing: 0.02em;
       color: var(--color-slate);
+
     }
   
     .contact-link {
@@ -1414,15 +1426,17 @@
     }
   
     .footer-container {
-      width: 584px;
+      margin-left: 72px;
+      margin-right: 120px;
     }
   
     .footer-content-container {
       flex-wrap: wrap;
       align-items: baseline;
       display: flex;
-      
+      gap: 24px;
     }
+
     .social-media-text {
       font-weight: 500;
       font-size: 16px;
@@ -1610,8 +1624,9 @@
   
     .contact-list {
       display: flex;
-      gap: 40px;
+      gap: 12px;
       flex-direction: column;
+      margin-right: auto;        
     }
   
     .section-about {
@@ -2044,11 +2059,6 @@
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       margin: auto;
     }
-  
-  
-  
-  
-  
      .btn-subscribe {
       font-family: "Roboto", sans-serif;
       min-width: 165px;
@@ -2065,7 +2075,7 @@
       background-color: #4D5AE5;
       border: none;
       border-radius: 4px;
-    }
+    }     
   
     .form-subscribe {
       margin-bottom: 16px;
@@ -2099,11 +2109,11 @@
       margin-left: 16px;
       fill: var(--color-cloud);
     }
-  /*
+  
         .form-container {
-          margin-left: 88px;
+          margin-left: 72px;
         }
-  */
+  
     .form-email {
       display: flex;
       gap: 24px;
@@ -2169,6 +2179,7 @@
 
  .list-service {
    width: 360px;
-
  }
+
+
 }
