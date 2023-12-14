@@ -385,6 +385,7 @@
     .list-media {
       display: flex;
       gap: 16px;
+      justify-content: center;
     }
   
     .list-social-media {
@@ -416,6 +417,8 @@
       letter-spacing: 0.02em;
       color: var(--color-cloud);
       max-width: 264px;
+      font-weight: 400;
+      font-style: normal;
     }
   
     .text {
@@ -1135,6 +1138,10 @@
     padding-right: 24px;
     padding-top: 72px;
     padding-bottom: 48px;
+  }
+  .form-email{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 /* =======TABLET====== */
