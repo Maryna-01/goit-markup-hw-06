@@ -103,7 +103,11 @@
     .mobile-nav-list{
       margin-bottom: auto;
     }
-    
+    .mobile-media{
+     display: flex;
+      gap: 40px;
+      justify-content: center;
+    }
     .header-logo-link {
       font-family: "Raleway", sans-serif;
       font-weight: 800;
@@ -360,7 +364,7 @@
       align-items: center;
       margin-bottom: 72px;
     }
-  /* не потрібне (можливо)
+  /* не потрібне 
     .footer-content-container {
       display: flex;
       align-items: baseline;
@@ -578,12 +582,22 @@
         gap: 40px;
     }
     .mobile-menu-clos-btn{
-      background-color: transparent;
-      border: none;
-      fill: #2f2f37;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e7e9fc;
+      border: 1px solid rgba(0, 0, 0, 0.1);
       padding: 0;
-      line-height: 0;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);  
     }
+
     .mobile-menu-icon{
       width: 40px;
         height: 40px;
@@ -1112,6 +1126,32 @@
       border-radius: 4px;
       color: #ffffff;
     }
+
+            .menu-mobil-navigation {
+              margin-top: auto;
+              display: flex;
+              flex-wrap: wrap;
+            }
+  .menu-mobile{
+      display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+        
+  }
+  .menu-mobil-item{
+    font-family: Roboto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0.72px;
+      text-transform: capitalize;
+      gap: 40px;
+      color: #2e2f2e;
+      background: #FFF;
+  }
+
   .mobile-menu{
     display: flex;
     position: fixed;
@@ -1126,25 +1166,65 @@
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .mobile-menu.is-open{
  opacity: 1;
  visibility: visible;
  pointer-events: auto;
   }
+
   .mobile-menu-container{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-right: 24px;
-    padding-top: 72px;
-    padding-bottom: 48px;
+      padding-right: 24px;
+      padding-top: 72px;
+      padding-bottom: 48px;
   }
   .form-email{
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .menu-mobile-media{ 
+   width: 80px;
+   height: 80px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+       .mobile-media-link{
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-iris);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+  .mobile-icon{
+    fill: var(--color-cloud);
+  }
+
 }
+@media screen and (min-resolution:192dpi) and (max-width:768px),
+screen and (min-resolution:2dppx) and (max-width:768px),
+screen and (min-device-pixel-ratio:2) and (max-width:768px) {
+   .section-hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+       url(../images/people-office-x2.jpg);
+    }
+  }
 /* =======TABLET====== */
+ @media screen and (min-resolution:192dpi) and (min-width:768px),
+ screen and (min-resolution:2dppx) and (max-width:768px),
+ screen and (min-device-pixel-ratio:2) and (min-width:768px) {
+   .section-hero {
+     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+       url(../images/people-office-x2.jpg);
+   }
+ }
+ 
 @media screen and (min-width:768px) {
   /* Effective Solutions for Your Business */
     .section-hero {
@@ -1432,16 +1512,12 @@
       padding: 100px 0;
     }
   
-    .footer-container {
-      margin-left: 72px;
-      margin-right: 120px;
-    }
-  
     .footer-content-container {
       flex-wrap: wrap;
-      align-items: baseline;
       display: flex;
-      gap: 24px;
+      gap: 72px 24px;
+      width: 584px;
+      align-items: baseline;
     }
 
     .social-media-text {
@@ -2144,12 +2220,21 @@
 .container-icon{
   display: none;
 }
-
  .list-link {
    flex-basis: calc((100% - 24px) / 2);
  }
 }
+
 /* =============DESKtop */
+ @media screen and (min-resolution:192dpi) and (min-width:1158px),
+ screen and (min-resolution:2dppx) and (max-width:1158px),
+ screen and (min-device-pixel-ratio:2) and (min-width:1158px) {
+   .section-hero {
+     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+       url(../images/people-office-x2.jpg);
+   }
+ }
+
 @media screen and (min-width:1158px) {
 /* Effective Solutions for Your Business */
 .about-link{
@@ -2187,6 +2272,11 @@
  .list-service {
    width: 360px;
  }
+.footer-content-container{
+  flex-wrap: nowrap;
+  gap: unset;
+}
 
 
 }
+
