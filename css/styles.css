@@ -98,6 +98,7 @@
       display: flex;
       align-items: center;
       margin-right: auto;
+
     }
   
     .mobile-nav-list{
@@ -364,6 +365,8 @@
       align-items: center;
       margin-bottom: 72px;
     }
+
+
   /* не потрібне 
     .footer-content-container {
       display: flex;
@@ -564,8 +567,8 @@
     }
   
     .header-list-link {
-      display: flex;
-      gap: 40px;
+      display: none;
+      gap: 40px; 
     }
     .menu-mobile{
     display: flex;
@@ -615,7 +618,7 @@
     }
   
     .contact-list {
-      display: flex;
+      display: none;
       gap: 40px;
     }
   
@@ -793,7 +796,7 @@
       border-bottom: 1px solid var(--color-cornflower);
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
       border-bottom: 1px solid #e7e9fc;
-      background: #fff; 
+      background: #fff;
     }
   
     .teams-list-img-wrapper {
@@ -846,7 +849,6 @@
   }
   */
     .container-modal-windows {
-
       position: fixed;
       top: 0;
       left: 0;
@@ -2193,10 +2195,6 @@ screen and (min-device-pixel-ratio:2) and (max-width:768px) {
       fill: var(--color-cloud);
     }
   
-        .form-container {
-          margin-left: 72px;
-        }
-  
     .form-email {
       display: flex;
       gap: 24px;
@@ -2275,6 +2273,7 @@ screen and (min-device-pixel-ratio:2) and (max-width:768px) {
 .footer-content-container{
   flex-wrap: nowrap;
   gap: unset;
+  width: 100%;
 }
 
 
