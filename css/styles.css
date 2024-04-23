@@ -69,7 +69,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      max-width: 1440px;
+      max-width: 320px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -224,15 +224,14 @@ gap: 72px;
     }
   
     .hero-soluction {
-      font-size: 56px;
-      line-height: 1.07;
+      font-size: 36px;
+      line-height: 40px;
       text-align: center;
       letter-spacing: 0.02em;
       color: var(--color-white);
-      max-width: 488px;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 216px;
       margin-bottom: 48px;
+      margin-right: 128px;
   
     }
   
@@ -251,9 +250,6 @@ gap: 72px;
       height: 56px;
       border: none;
       border-radius: 4px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 72px;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   
@@ -370,14 +366,6 @@ gap: 72px;
       margin-bottom: 72px;
     }
 
-
-  /* не потрібне 
-    .footer-content-container {
-      display: flex;
-      align-items: baseline;
-    }
-  
-  */
     .social-media-text {
       font-weight: 500;
       font-size: 16px;
@@ -1522,6 +1510,7 @@ screen and (min-device-pixel-ratio:2) and (max-width:768px) {
       display: flex;
       gap: 72px 24px;
       align-items: baseline;
+      padding-left: 108px;
     }
 
     .social-media-text {
@@ -1711,11 +1700,19 @@ screen and (min-device-pixel-ratio:2) and (max-width:768px) {
   
     .contact-list {
       display: flex;
-      gap: 12px;
-      flex-direction: column;
-      margin-right: auto;        
+      gap: 40px;
+   
+          
     }
-  
+      @media screen and (max-width:1157px) {
+    .contact-list {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        font-size: 16px;
+      }
+    }
+
     .section-about {
       padding: 120px 0;
     }
@@ -2283,12 +2280,11 @@ screen and (min-device-pixel-ratio:2) and (max-width:768px) {
 .footer-content-container{
   flex-wrap: nowrap;
   gap: unset;
-  width: 100%;
+  padding-left: 15px;
 }
 
 .footer-container{
-  margin-right: 120px;
-  margin-left: 156px;
+  margin-right: auto;
 }
 
 .media-container{
