@@ -595,8 +595,8 @@ gap: 72px;
     }
 */
     .mobile-menu-icon{
-      width: 40px;
-        height: 40px;
+      width: 24px;
+        height: 24px;
         flex-shrink: 0;
         fill: var(--IRIS, #4D5AE5);
     }
