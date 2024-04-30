@@ -2251,9 +2251,6 @@ screen and (min-device-pixel-ratio:2) and (max-width:768px) {
   flex-wrap: nowrap;
 }
 
- .mobile-menu {
-   display: none;
- }
 .container-icon{
   display: flex;
   align-items: center;
