@@ -111,6 +111,7 @@ gap: 72px;
       display: flex;
       flex-wrap: wrap;
       padding-bottom: 168px;
+
       
     } 
     
@@ -119,6 +120,8 @@ gap: 72px;
      gap: 40px;
      justify-content: center;
      align-items: center;
+     padding-bottom: 40px;
+    
     }
     .header-logo-link {
       font-family: "Raleway", sans-serif;
@@ -1151,10 +1154,11 @@ gap: 72px;
       color: #ffffff;
     }
 
-            .menu-mobil-navigation {
-              margin-top: auto;
-              display: flex;
-              flex-wrap: wrap;
+    .menu-mobil-navigation {
+     margin-top: auto;
+
+     
+  
             }
   .menu-mobile{
       display: flex;
@@ -1197,19 +1201,19 @@ gap: 72px;
   }
 
   .mobile-menu-container{ 
+    height: 100%;
     position: relative;
     flex-direction: column;
-    padding-top: 72px;
-    padding-bottom: 48px;
-    display: inline-block;
+    padding: 72px 16px 40px 16px;
+    display:flex;
+
   }
   
   .container{
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
     display: block;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
   }
   .form-email{
     flex-wrap: wrap;
@@ -1295,7 +1299,12 @@ screen and (min-device-pixel-ratio:2) and (max-width:768px) {
        border-radius: 4px;
        margin-bottom: 8px;
      }
-  
+            .menu-mobil-navigation {
+              margin-top: auto;
+              display: flex;
+      
+      
+            }
     .nav-list {
       font-weight: 800;
       font-size: 18px;
